@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/558c6718f3.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>Profile-component</title>
+</head>
+
+<body>
+    <section class="main-section">
+        <header class="main-header">
+            <figure class="img-profile">
+                <img id="profile-avatar" src="./assets/unknow.png" alt="image profile">
+            </figure>
+
+            <div class="names">
+                <h2 class="name">
+                    <a id="profile-link" href="https://github.com/" target="blank">
+                        Nome do Usuário
+                    </a>
+                </h2>
+                <p id="login-name">Login do Usuário</p>
+            </div>
+
+            <div>
+                <button class="buttons" id="edit"><i class="fas fa-edit"></i> Editar</button>
+            </div>
+        </header>
+
+        <article class="main-article">
+            <div class="boxs" id="info-01">
+                <p class="info">Repositórios</p>
+                <p class="counter" id="counter-01">00</p>
+            </div>
+            <div class="boxs" id="info-02">
+                <p class="info">Seguidores</p>
+                <p class="counter" id="counter-02">00</p>
+            </div>
+            <div class="boxs" id="info-03">
+                <p class="info">Seguindo</p>
+                <p class="counter" id="counter-03">00</p>
+            </div>
+        </article>
+
+    </section>
+    <section id="search-github-user">
+        <button id="close-tab">X</button>
+        <div id="search-github-user-container">
+            <label for="login-name-input">Login do usuário:</label>
+            <input id="login-name-input" name="login-name-input" type="text" placeholder="Ex.: GustavoDias7">
+            <button class="buttons" id="confirm"><i class="fas fa-check"></i> Confirmar</button>
+        </div>
+    </section>
+</body>
+
+</html>

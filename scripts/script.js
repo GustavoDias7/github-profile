@@ -50,8 +50,8 @@ function hideAndShowSearch() {
     }
 }
 
-let edit = document.querySelector('#edit');
-edit.addEventListener('click', hideAndShowSearch);
+let searchBtn = document.querySelector('#search');
+searchBtn.addEventListener('click', hideAndShowSearch);
 
 let closeTab = document.querySelector('#close-tab');
 closeTab.addEventListener('click', hideAndShowSearch);

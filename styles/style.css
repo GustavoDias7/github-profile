@@ -9,27 +9,20 @@
 
 body {
     background-color: #0C0B0B;
+    padding: 0 20px;
 }
 
 .main-section {
-    position: absolute;
-    bottom: 0;
-    right: 20px;
-    top: 0;
-    left: 20px;
-    
-    margin: auto;
+    margin: 30px auto;
     padding: 3rem 4rem;
-    
     max-width: 610.500px;
-    max-height: 160px;
     background-color: #181515;
 }
 
 .main-header {
     display: flex;
     align-items: center;
-    margin: 0 auto 10px;
+    margin: 0 auto;
 }
 
 #profile-avatar {
@@ -171,11 +164,6 @@ button {
 }
 
 @media (max-width: 530px) {
-    .main-section {
-        padding: 2rem 3rem;
-        max-height: 415px;
-    }
-
     .main-header {
         flex-direction: column;
         row-gap: .5rem;

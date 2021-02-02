@@ -167,7 +167,22 @@ button {
     margin: 0 auto;
 }
 
+#repos-list ul {
+    list-style-type: none;
+    border: 1px solid #B7B7B7;
+    margin: 1rem 0;
+    padding: .4rem;
+}
+
+#repos-list li {
+    margin: .4rem 0;
+}
+
 @media (max-width: 530px) {
+    .generic-section {
+        padding: 2rem;
+    }
+    
     .main-header {
         flex-direction: column;
         row-gap: .5rem;

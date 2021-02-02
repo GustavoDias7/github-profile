@@ -20,9 +20,10 @@ function getUserGithub() {
 function getDatas(data) {
     let myDatas = {
         name: data.name,
+        bio: data.bio,
         login: data.login,
         followers: data.followers,
-        repos: data.public_repos,
+        reposNum: data.public_repos,
         avatar: data.avatar_url,
         linkProfile: data.html_url,
         following: data.following
@@ -35,7 +36,8 @@ function changeInformations(myDatas) {
     document.querySelector('#profile-link').setAttribute('href', myDatas.linkProfile);
     document.querySelector('#profile-link').innerText = myDatas.name;
     document.querySelector('#login-name').innerText = myDatas.login;
-    document.querySelector('#counter-01').innerText = myDatas.repos;
+    document.querySelector('#bio').innerText = myDatas.bio;
+    document.querySelector('#counter-01').innerText = myDatas.reposNum;
     document.querySelector('#counter-02').innerText = myDatas.followers;
     document.querySelector('#counter-03').innerText = myDatas.following;
 }
